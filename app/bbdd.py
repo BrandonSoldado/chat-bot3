@@ -2,6 +2,7 @@ import psycopg2
 from psycopg2 import OperationalError, Error
 from datetime import datetime
 
+<<<<<<< HEAD
 
 def EjecutarConsultaSqlGeneral(query):
     conn = psycopg2.connect(
@@ -21,6 +22,8 @@ def EjecutarConsultaSqlGeneral(query):
         print(f"Error ejecutando la consulta: {e}")
         return []
 
+=======
+>>>>>>> 2711317a02654b8e7783c0477da2812f88316273
 def obtener_fecha_actual():
     fecha_actual = datetime.now().strftime("%Y-%m-%d")
     return fecha_actual
